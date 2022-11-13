@@ -166,14 +166,55 @@ export const Landing = () => {
 
       {/*  // -----------------------// INTRO-TOP //----------------------------- // */}
 
-      <div class="p-2 mx-auto max-w-lg text-center">
-        <h2 class="text-white text-3xl font-bold sm:text-4xl">Justpass</h2>
 
-        <p class="mt-4 text-gray-300">
-          An all purpose pass to make events easier
-        </p>
-        <img class="p-3" src={rocket} alt="logo" />
-      </div>
+      <section>
+        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+            <div
+              class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
+            >
+              <img
+                alt="Party"
+                src={rocket}
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+
+            <div class="lg:py-24">
+              <h2 class="text-3xl font-bold sm:text-4xl">JustPass</h2>
+
+              <p class="mt-4 text-gray-600">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
+                atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
+                veniam tempora deserunt? Molestiae eius quidem quam repellat.
+              </p>
+
+              <a
+                href="#"
+                class="mt-8 inline-flex items-center rounded border border-red-600 bg-red-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+              >
+                <span class="text-sm font-medium"> Get Started </span>
+
+                <svg
+                  class="ml-3 h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/*  // -----------------------// INTRO-BOTTOM //----------------------------- //*/}
 
@@ -283,7 +324,7 @@ export const Landing = () => {
       {/* // -----------------------// RANDOM EVENT CATEGORIES-TOP //---------------------------- // */}
 
 
-      <div class="Music">
+      <div class="Music p-24">
         <h1 class="p-5 text-4xl">Music</h1>
         <Swiper
           spaceBetween={50}
@@ -291,16 +332,15 @@ export const Landing = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          { concertEvents && concertEvents.map((event) => (
+          {concertEvents && concertEvents.map((event) => (
             <SwiperSlide>
               <EventCard image={event.banner} date={event.time} name={event.name} description={event.description} />
-            </SwiperSlide>          
+            </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-
-      <div class="Sports">
+      <div class="Sports p-24">
         <h1 class="p-5 text-4xl">Sports</h1>
         <Swiper
           spaceBetween={50}
@@ -309,10 +349,10 @@ export const Landing = () => {
           onSwiper={(swiper) => console.log(swiper)}
         >
 
-          { sportsEvents && sportsEvents.map((event) => (
+          {sportsEvents && sportsEvents.map((event) => (
             <SwiperSlide>
               <EventCard image={event.banner} date={event.time} name={event.name} description={event.description} />
-            </SwiperSlide>          
+            </SwiperSlide>
           ))}
         </Swiper>
       </div>
