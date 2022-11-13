@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Landing } from './landing';
+import { Landing } from './pages/landing';
 import "tailwindcss/tailwind.css";
 
 function App() {
