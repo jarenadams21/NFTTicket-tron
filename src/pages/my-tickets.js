@@ -13,10 +13,11 @@ export const MyTickets = () => {
   const [tronLink, setTronLink] = useState(null);
 
 
-  const getNFT = async (address) => {
-    let nfts = await getAllMyNFTs(address, window.tronLink.tronWeb);
-    setNfts(nfts)
-  }
+  const getNFT =  (address) => {
+    console.log(window.tronWeb)
+    getAllMyNFTs(address, window.tronWeb)
+  };
+
   useEffect(() => {
 
     if(!tronLink || !tronLink.ready)

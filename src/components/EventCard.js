@@ -22,7 +22,7 @@ export const EventCard = ({ id,image, date, name, description }) => {
         class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
       >
         <p class="text-sm text-white">
-          {description}
+          {description.substring(0, 100)}....
         </p>
         <a
           href={`/event/${id}`}

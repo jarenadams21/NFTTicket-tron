@@ -11,9 +11,7 @@ export class EventContract {
     }
 
     async loadContract(address) {
-        console.log(concertABi);
-        let instance = await this.tronWeb.contract().at(address)
-         
+        let instance = await window.tronWeb.contract().at(address)
         this.contract = instance
         this.nfts = []
     }
@@ -47,6 +45,7 @@ export async function getAllMyNFTs(address, tronWeb) {
     for(let index = 0;index < data.length;index++ ) {
         let event = data[index];
         let eventContract =new EventContract(tronWeb);
+        console.log(event.address)
         await eventContract.loadContract(event.address)
         const nftID = await eventContract.getNFT(address,0);
         console.log(nftID)
