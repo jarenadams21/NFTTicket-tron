@@ -5,7 +5,6 @@ import Sidemenu from "../components/Sidemenu";
 export function Event({ event }) {
 
 
-
     return (
         <div className="w-full">
           <Sidemenu />
