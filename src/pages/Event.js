@@ -14,7 +14,7 @@ export function Event() {
     const { name, description, time, banner } = data[id]
 
     return (
-        <div className="w-full bg-gray-900 h-full">
+        <div className="w-full bg-gray-900 h-full p-6">
             <Sidemenu />
             <div className="container mx-auto">
                 <section className="flex flex-col gap-12 place-content-center">
@@ -40,13 +40,11 @@ export function Event() {
                                 <p className="text-xl text-black">Location</p>
                                 </div>
 
-
                                 <button
                                     type="button"
                                     class="mt-4 flex w-full items-center justify-center rounded-sm bg-red-600 px-8 py-4"
                                 >
                                     <span class="text-sm font-medium"> Buy $199 </span>
-
                                     <svg
                                         class="ml-1.5 h-5 w-5"
                                         xmlns="http://www.w3.org/2000/svg"

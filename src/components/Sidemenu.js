@@ -34,7 +34,7 @@ const Sidemenu = () => {
                             <ul class="flex items-center gap-6 text-sm">
                                 <li>
                                     <a
-                                        class="text-red-500 transition hover:text-gray-red/75"
+                                        class="text-red-500 transition hover:text-gray-red/75 font-bold"
                                         href="/"
                                     >
                                         Explore
@@ -43,7 +43,7 @@ const Sidemenu = () => {
 
                                 <li>
                                     <a
-                                        class="text-red-500 transition hover:text-gray-red/75"
+                                        class="text-red-500 transition hover:text-gray-red/75 font-bold"
                                         href="/mytickets"
                                     >
                                         My Tickets
