@@ -7,7 +7,7 @@ import "tailwindcss/tailwind.css";
 function App() {
   return (
 
-    <MyTickets />
+    <Landing />
   );
 }
 
