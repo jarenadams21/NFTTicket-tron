@@ -1,31 +1,28 @@
-import revolution from '../images/newenglandrevolution.jpeg'
 
-export const BullsRevolution = () => {
+
+export const EventCard = ({ image, date, name, description }) => {
     return (
         <a href="#" class="group relative block bg-black">
   <img
     alt="Developer"
-    src={revolution}
-    class="max-h-screen absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+    src={image}
+    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
   />
 
   <div class="relative p-8">
     <p class="text-sm font-medium uppercase tracking-widest text-red-600">
-      December 8th
+      {date}
     </p>
 
-    <p class="text-2xl font-bold text-white">New York Red Bulls @ New England Revolution</p>
+    <p class="text-2xl font-bold text-white">{name}</p>
 
     <div class="mt-64">
       <div
         class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
       >
         <p class="text-sm text-white">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-          perferendis hic asperiores quibusdam quidem voluptates doloremque
-          reiciendis nostrum harum. Repudiandae?
+          {description}
         </p>
-
         <a
           href="#"
           class="mt-8 inline-flex items-center rounded border border-red-600 bg-red-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
