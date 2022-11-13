@@ -1,9 +1,21 @@
 import rocket from './images/rocketshipevent.jpeg'
+import weeknd from './images/theweekndsinging.jpeg'
+import skimask from './images/skimaskperformance.jpeg'
+import kinggizzard from './images/kinggizzard.jpeg'
+import slowthai from './images/slowthai.jpeg'
+import celtics from './images/celtics@wizards.jpeg'
+import redsox from './images/bettssplashREDSOX.jpeg'
+import bruins from './images/bostonbruins.jpg'
+import revolution from './images/newenglandrevolution.jpeg'
+
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
 
 export const Landing = () => {
+  
     return (
      // -----------------------// NAVBAR-TOP //----------------------------- //
-      <div class="bg-gray-900">
+      <div class="bg-gray-900 text-white">
       <header aria-label="Site Header" class="border-b border-gray-100">
   <div
     class="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8"
@@ -256,11 +268,51 @@ export const Landing = () => {
         </a>
       </div>
       <div class="mt-12 text-center">
+        
+      </div>
+    </div>
+  </section>
+  {/* // -----------------------// WHAT WE DO-BOTTOM //---------------------------- // */}
+
+  {/* // -----------------------// RANDOM EVENT CATEGORIES-TOP //---------------------------- // */}
+
+<div class="Music">
+  <h1 class="p-5 text-4xl">Music</h1>
+  <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide><a href="#" class="group relative block bg-black">
+  <img
+    alt="Developer"
+    src={weeknd}
+    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+
+  <div class="relative p-8">
+    <p class="text-sm font-medium uppercase tracking-widest text-red-600">
+      November 21st
+    </p>
+
+    <p class="text-2xl font-bold text-white">The Weeknd</p>
+
+    <div class="mt-64">
+      <div
+        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p class="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+
         <a
           href="#"
           class="mt-8 inline-flex items-center rounded border border-red-600 bg-red-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
         >
-          <span class="text-sm font-medium"> Get Started </span>
+          <span class="text-sm font-medium"> Find Tickets </span>
   
           <svg
             class="ml-3 h-5 w-5"
@@ -277,15 +329,377 @@ export const Landing = () => {
             />
           </svg>
         </a>
-        
+
       </div>
     </div>
-  </section>
-  {/* // -----------------------// WHAT WE DO-BOTTOM //---------------------------- // */}
+  </div>
+</a>
+</SwiperSlide>
+<SwiperSlide><a href="#" class="group relative block bg-black">
+  <img
+    alt="Developer"
+    src={skimask}
+    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
 
-  {/* // -----------------------// RANDOM EVENT CATEGORIES-TOP //---------------------------- // */}
+  <div class="relative p-8">
+    <p class="text-sm font-medium uppercase tracking-widest text-red-600">
+      November 24th
+    </p>
 
-    
+    <p class="text-2xl font-bold text-white">Ski Mask the Slump God</p>
+
+    <div class="mt-64">
+      <div
+        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p class="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+        <a
+          href="#"
+          class="mt-8 inline-flex items-center rounded border border-red-600 bg-red-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
+        >
+          <span class="text-sm font-medium"> Find Tickets </span>
+  
+          <svg
+            class="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</a>
+</SwiperSlide>
+<SwiperSlide><a href="#" class="group relative block bg-black">
+  <img
+    alt="Developer"
+    src={kinggizzard}
+    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+
+  <div class="relative p-8">
+    <p class="text-sm font-medium uppercase tracking-widest text-red-600">
+      November 26th
+    </p>
+
+    <p class="text-2xl font-bold text-white">King Gizzard and the Lizard Wizard</p>
+
+    <div class="mt-64">
+      <div
+        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p class="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+        <a
+          href="#"
+          class="mt-8 inline-flex items-center rounded border border-red-600 bg-red-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
+        >
+          <span class="text-sm font-medium"> Find Tickets </span>
+  
+          <svg
+            class="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</a>
+</SwiperSlide>
+<SwiperSlide><a href="#" class="group relative block bg-black">
+  <img
+    alt="Developer"
+    src={slowthai}
+    class="max-h-screen absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+
+  <div class="relative p-8">
+    <p class="text-sm font-medium uppercase tracking-widest text-red-600">
+      December 1st
+    </p>
+
+    <p class="text-2xl font-bold text-white">Slow Thai</p>
+
+    <div class="mt-64">
+      <div
+        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p class="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+
+        <a
+          href="#"
+          class="mt-8 inline-flex items-center rounded border border-red-600 bg-red-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
+        >
+          <span class="text-sm font-medium"> Find Tickets </span>
+  
+          <svg
+            class="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</a>
+</SwiperSlide>
+    </Swiper>
+</div>
+
+
+
+<div class="Sports">
+  <h1 class="p-5 text-4xl">Sports</h1>
+  <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide><a href="#" class="group relative block bg-black">
+  <img
+    alt="Developer"
+    src={celtics}
+    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+
+  <div class="relative p-8">
+    <p class="text-sm font-medium uppercase tracking-widest text-red-600">
+      November 16th
+    </p>
+
+    <p class="text-2xl font-bold text-white">Washington Wizards @ Boston Celtics</p>
+
+    <div class="mt-64">
+      <div
+        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p class="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+
+        <a
+          href="#"
+          class="mt-8 inline-flex items-center rounded border border-red-600 bg-red-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
+        >
+          <span class="text-sm font-medium"> Find Tickets </span>
+  
+          <svg
+            class="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</a>
+</SwiperSlide>
+<SwiperSlide><a href="#" class="group relative block bg-black">
+  <img
+    alt="Developer"
+    src={redsox}
+    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+
+  <div class="relative p-8">
+    <p class="text-sm font-medium uppercase tracking-widest text-red-600">
+      November 24th
+    </p>
+
+    <p class="text-2xl font-bold text-white">Cleveland Guardians @ Boston Red Sox</p>
+
+    <div class="mt-64">
+      <div
+        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p class="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+        <a
+          href="#"
+          class="mt-8 inline-flex items-center rounded border border-red-600 bg-red-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
+        >
+          <span class="text-sm font-medium"> Find Tickets </span>
+  
+          <svg
+            class="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</a>
+</SwiperSlide>
+<SwiperSlide><a href="#" class="group relative block bg-black">
+  <img
+    alt="Developer"
+    src={bruins}
+    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+
+  <div class="relative p-8">
+    <p class="text-sm font-medium uppercase tracking-widest text-red-600">
+      December 2nd
+    </p>
+
+    <p class="text-2xl font-bold text-white">New York Islanders @ Boston Bruins</p>
+
+    <div class="mt-64">
+      <div
+        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p class="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+        <a
+          href="#"
+          class="mt-8 inline-flex items-center rounded border border-red-600 bg-red-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
+        >
+          <span class="text-sm font-medium"> Find Tickets </span>
+  
+          <svg
+            class="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</a>
+</SwiperSlide>
+<SwiperSlide><a href="#" class="group relative block bg-black">
+  <img
+    alt="Developer"
+    src={revolution}
+    class="max-h-screen absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+
+  <div class="relative p-8">
+    <p class="text-sm font-medium uppercase tracking-widest text-red-600">
+      December 8th
+    </p>
+
+    <p class="text-2xl font-bold text-white">New York Red Bulls @ New England Revolution</p>
+
+    <div class="mt-64">
+      <div
+        class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+      >
+        <p class="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+
+        <a
+          href="#"
+          class="mt-8 inline-flex items-center rounded border border-red-600 bg-red-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
+        >
+          <span class="text-sm font-medium"> Find Tickets </span>
+  
+          <svg
+            class="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</a>
+</SwiperSlide>
+    </Swiper>
+</div>
+
+
+
 
   {/* // -----------------------// RANDOM EVENT CATEGORIES-BOTTOM //---------------------------- // */}
 
