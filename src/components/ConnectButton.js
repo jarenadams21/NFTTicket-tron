@@ -71,7 +71,7 @@ export function ConnectButton() {
         elem = (                <div class="border-gray-100">
         <a
             href="#"
-            class="flex items-center bg-white"
+            class="flex items-center"
         >
             <img
                 alt="Man"
