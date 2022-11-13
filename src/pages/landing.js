@@ -7,7 +7,7 @@ import { Footer } from '../components/Footer';
 import Sidemenu from '../components/Sidemenu';
 import { EventCard } from '../components/EventCard';
 
-const data = require("../utils/data.json")
+const data = require("../utils/data.json");
 
 export const Landing = () => {
 
@@ -110,7 +110,7 @@ export const Landing = () => {
 
                 <span>
                   <a
-                    href="/account"
+                    href=" /account"
                     class="block border-b-4 border-transparent p-6 hover:border-red-700"
                   >
                     <svg

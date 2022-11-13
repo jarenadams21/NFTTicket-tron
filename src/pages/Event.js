@@ -7,7 +7,6 @@ import ReactMarkdown from 'react-markdown'
 export function Event({ name, img, time }) {
 
 
-
     return (
         <div className="w-full">
           <Sidemenu />
