@@ -12,7 +12,10 @@ import {
 } from "react-router-dom";
 
 import { Home } from './pages/Home';
-import { Event } from './pages/Event';
+import { Event, eventLoader } from './pages/Event';
+import { MyTickets } from './pages/my-tickets';
+
+
 
 
 
@@ -25,12 +28,13 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: "/app",
-    element: <Home />
+    path: "/mytickets",
+    element: <MyTickets />
   },
   {
-    path: "/event",
-    element: <Event />
+    path: "/event/:id",
+    element: <Event />,
+    loader: eventLoader,
   },
 ]);
 

@@ -5,7 +5,7 @@ const data = require("../utils/data.json")
 
 export const MyTickets = () => {
 
-  const concertEvents = data.concerts;
+  const concertEvents = data;
     return (
 
         

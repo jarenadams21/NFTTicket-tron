@@ -81,7 +81,7 @@ export function ConnectButton() {
 
             <div class="ml-1.5">
                 <p class="text-xs">
-                    <strong class="block font-medium">{address}...</strong>                            </p>
+                    <strong class="block font-medium text-white">{address}...</strong>                            </p>
             </div>
         </a>
     </div>)

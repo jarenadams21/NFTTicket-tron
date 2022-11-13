@@ -11,9 +11,10 @@ const data = require("../utils/data.json");
 
 export const Landing = () => {
 
-  const sportsEvents = data.sports;
-  const concertEvents = data.concerts;
+  const sportsEvents = data.slice(0, 3);
+  const concertEvents = data.slice(3, 6);
 
+  console.log(concertEvents)
 
   return (
     // -----------------------// NAVBAR-TOP //----------------------------- //
@@ -162,9 +163,6 @@ export const Landing = () => {
       </header> */}
       <Sidemenu />
 
-      {/*  // -----------------------// NAVBAR-BOTTOM //----------------------------- //*/}
-
-      {/*  // -----------------------// INTRO-TOP //----------------------------- // */}
 
 
       <section>
@@ -216,9 +214,6 @@ export const Landing = () => {
       </section>
 
 
-      {/*  // -----------------------// INTRO-BOTTOM //----------------------------- //*/}
-
-      {/* // -----------------------// WHAT WE DO-TOP //----------------------------- // */}
       <section class="bg-gray-900 text-white">
         <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
 
@@ -319,9 +314,6 @@ export const Landing = () => {
         </div>
       </section>
 
-      {/* // -----------------------// WHAT WE DO-BOTTOM //---------------------------- // */}
-
-      {/* // -----------------------// RANDOM EVENT CATEGORIES-TOP //---------------------------- // */}
 
 
       <div class="Music p-24">
@@ -332,9 +324,9 @@ export const Landing = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          {concertEvents && concertEvents.map((event) => (
+          {concertEvents && concertEvents.map((event, idx) => (
             <SwiperSlide>
-              <EventCard image={event.banner} date={event.time} name={event.name} description={event.description} />
+              <EventCard id={idx} image={event.banner} date={event.time} name={event.name} description={event.description} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -349,9 +341,9 @@ export const Landing = () => {
           onSwiper={(swiper) => console.log(swiper)}
         >
 
-          {sportsEvents && sportsEvents.map((event) => (
+          {sportsEvents && sportsEvents.map((event, idx) => (
             <SwiperSlide>
-              <EventCard image={event.banner} date={event.time} name={event.name} description={event.description} />
+              <EventCard id={idx} image={event.banner} date={event.time} name={event.name} description={event.description} />
             </SwiperSlide>
           ))}
         </Swiper>

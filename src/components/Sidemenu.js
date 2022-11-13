@@ -35,7 +35,7 @@ const Sidemenu = () => {
                                 <li>
                                     <a
                                         class="text-red-500 transition hover:text-gray-red/75"
-                                        href="/explore"
+                                        href="/"
                                     >
                                         Explore
                                     </a>

@@ -1,8 +1,9 @@
 
 
-export const EventCard = ({ image, date, name, description }) => {
+export const EventCard = ({ id,image, date, name, description }) => {
+    
     return (
-        <a href="#" class="group relative block bg-black">
+        <a href={`/event/${id}`} class="group relative block bg-black">
   <img
     alt="Developer"
     src={image}
@@ -24,7 +25,7 @@ export const EventCard = ({ image, date, name, description }) => {
           {description}
         </p>
         <a
-          href="#"
+          href={`/event/${id}`}
           class="mt-8 inline-flex items-center rounded border border-red-600 bg-red-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-pink-500"
         >
           <span class="text-sm font-medium"> Find Tickets </span>
