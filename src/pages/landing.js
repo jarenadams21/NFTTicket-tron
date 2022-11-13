@@ -182,9 +182,8 @@ export const Landing = () => {
               <h2 class="text-3xl font-bold sm:text-4xl">JustPass</h2>
 
               <p class="mt-4 text-gray-300">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
-                atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
-                veniam tempora deserunt? Molestiae eius quidem quam repellat.
+                Cut out the plastic waste, high costs, and in-accessibility of your event experiences. 
+                With Justpass, a frictionless and more sustainable approach to events is made easy.
               </p>
 
               <a
@@ -274,7 +273,7 @@ export const Landing = () => {
               <h2 class="mt-4 text-xl font-bold text-white">Buy Your Pass</h2>
 
               <p class="mt-1 text-sm text-gray-300">
-                ...
+                Purchase and load funds into your ticket.
               </p>
             </a>
 
