@@ -3,7 +3,7 @@ export const Ticket = ({img, location, eventName}) => {
         <a href="#" class="text-white m-6 block rounded-lg p-4 shadow-sm shadow-indigo-100">
   <img
     src={img}
-    class="h-56 w-full rounded-md object-cover"
+    class="h-64 w-full rounded-md object-cover"
   />
 
   <div class="mt-2">
@@ -21,30 +21,29 @@ export const Ticket = ({img, location, eventName}) => {
       </div>
     </dl>
 
-    <div class="flex flex-wrap justify-between mt-4  items-center text-xs">
-    <a
-  class="group relative inline-block text-sm font-medium text-red-600 focus:outline-none focus:ring active:text-red-500"
-  href="/download"
+  <div class="p-6">
+
+  <a
+  class="flex items-center justify-center rounded-xl border-4 border-black bg-red-500 px-8 py-4 font-bold shadow-[6px_6px_0_0_#000] transition hover:shadow-none focus:outline-none focus:ring active:bg-pink-50"
+  href="/blog"
 >
-  <span class="absolute inset-0 border border-current"></span>
-  <span
-    class="block border border-current bg-white px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
-  >
-    Details
-  </span>
+  Event Details <span aria-hidden="true" class="ml-1.5" role="img"></span>
 </a>
 <a
-  class="group relative inline-block text-sm font-medium text-red-600 focus:outline-none focus:ring active:text-red-500"
-  href="/download"
+  class="mt-4 flex items-center justify-center rounded-xl border-4 border-black bg-red-500 px-8 py-4 font-bold shadow-[6px_6px_0_0_#000] transition hover:shadow-none focus:outline-none focus:ring active:bg-pink-50"
+  href="/blog"
 >
-  <span class="absolute inset-0 border border-current"></span>
-  <span
-    class="block border border-current bg-white px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
-  >
-    NFT
-  </span>
+  My NFT <span aria-hidden="true" class="ml-1.5" role="img"></span>
 </a>
-    </div>
+<a
+  class="mt-4 flex items-center justify-center rounded-xl border-4 border-black bg-red-500 px-8 py-4 font-bold shadow-[6px_6px_0_0_#000] transition hover:shadow-none focus:outline-none focus:ring active:bg-pink-50"
+  href="/blog"
+>
+  Refill <span aria-hidden="true" class="ml-1.5" role="img"></span>
+</a>
+
+   </div>
+ 
   </div>
 </a>
     )

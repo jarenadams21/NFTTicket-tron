@@ -3,9 +3,9 @@ import React from "react";
 
 export function Footer() {
     return (
-        <footer aria-label="Site Footer" class="bg-gray-100 dark:bg-gray-900">
+        <footer aria-label="Site Footer" class="bg-gray-900 dark:bg-gray-900">
         <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-          <div class="flex justify-center text-teal-600 dark:text-red-600">
+          <div class="flex justify-center text-white dark:text-red-600">
             <svg
               class="h-8"
               viewBox="0 0 118 24"
@@ -59,7 +59,7 @@ export function Footer() {
             <ul class="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  class="text-red-600 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   About
@@ -68,7 +68,7 @@ export function Footer() {
 
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  class="text-red-600 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   Careers
@@ -77,7 +77,7 @@ export function Footer() {
 
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  class="text-red-600 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   History
@@ -86,7 +86,7 @@ export function Footer() {
 
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  class="text-red-600 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   Services
@@ -95,7 +95,7 @@ export function Footer() {
 
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  class="text-red-600 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   Projects
@@ -104,7 +104,7 @@ export function Footer() {
 
               <li>
                 <a
-                  class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  class="text-red-600 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="/"
                 >
                   Blog
@@ -119,7 +119,7 @@ export function Footer() {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                class="text-red-600 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
               >
                 <span class="sr-only">Facebook</span>
                 <svg
@@ -142,7 +142,7 @@ export function Footer() {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                class="text-red-600 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
               >
                 <span class="sr-only">Instagram</span>
                 <svg
@@ -165,7 +165,7 @@ export function Footer() {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                class="text-red-600 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
               >
                 <span class="sr-only">Twitter</span>
                 <svg
@@ -186,7 +186,7 @@ export function Footer() {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                class="text-red-600 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
               >
                 <span class="sr-only">GitHub</span>
                 <svg
@@ -209,7 +209,7 @@ export function Footer() {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                class="text-red-600 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
               >
                 <span class="sr-only">Dribbble</span>
                 <svg

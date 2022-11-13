@@ -29,7 +29,7 @@ export const MyTickets = () => {
 
        
         <div className="grid grid-cols-2 lg:grid-cols-3">
-        { concertEvents && concertEvents.map((event) => (
+        { concertEvents && concertEvents.slice(0,3).map((event) => (
               <Ticket img={event.banner} location={event.location} eventName={event.name} />
                      
           ))}
